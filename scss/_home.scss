@@ -50,4 +50,40 @@
         position: relative;
         top: 3.4rem;
     }
+    @include responsive(991px) {
+        .container {
+            flex-direction: column;
+        }
+        .text {
+            max-width: 100%;
+            margin-bottom: 3rem;
+            h1 {
+                text-align: center;
+            }
+            p {
+                max-width: 100%;
+                text-align: center;
+            }
+            button {
+                margin: 0 auto;
+                display: block;
+            }
+            .know_resources {
+                margin-top: 5rem;
+                justify-content: center;
+            }
+        }
+    }
+    @include responsive(600px) {
+        padding-top: 2.5rem;
+        margin-top: 8rem;
+        .text {
+            h1 {
+                font-size: 4.3rem;
+            }
+        }
+        .image {
+            left: -9px;
+        }
+    }
 }
